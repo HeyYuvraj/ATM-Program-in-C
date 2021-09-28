@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ATM_Software.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\ATM_Software.dir/objects.a @CMakeFiles\ATM_Software.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\ATM_Software.dir/objects.a -Wl,--no-whole-archive -o ATM_Software.exe -Wl,--out-implib,libATM_Software.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ATM_Software.dir\linklibs.rsp

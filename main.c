@@ -6,7 +6,7 @@ int main() {
     char name[]="Yuvraj Verma"; //Username
     int pin=1234; //ATM Pin
     int balance=5000; //User Balance
-    int availcash=8000; //Available cash in ATM
+    int availablecash=8000; //Available cash in ATM
 
     //Program Execution
     printf("Welcome to Axis Bank!\n");
@@ -37,7 +37,7 @@ int main() {
             printf("\nVerify new pin: ");
             scanf("%d", &b);
             if (a == b) {
-                a = pin;
+                pin = a;
                 printf("\nPin changed sucessuflly!");
             } else {
                 printf("Pin not matched!");
@@ -46,9 +46,9 @@ int main() {
         case 3:
             printf("Enter amount to withdraw: ");
             scanf("%d", &c);
-            if (c <= balance && c <= availcash) {
+            if (c <= balance && c <= availablecash) {
                 balance = balance - c;
-                availcash = availcash - c;
+                availablecash = availablecash - c;
                 printf("Spitting out Money!");
             } else if (c >= balance) {
                 printf("You're out of money!");
@@ -60,7 +60,7 @@ int main() {
             printf("Enter amount to deposit: ");
             scanf("%d", &d);
             balance = balance + d;
-            availcash = availcash + d;
+            availablecash = availablecash + d;
             printf("Money deposited sucessfully!");
             printf("Your balance is %d", balance);
             break;
